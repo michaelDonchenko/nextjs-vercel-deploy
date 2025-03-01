@@ -4,7 +4,7 @@ export default async function Home() {
 
   return (
     <div className="p-4">
-      <h1 className="mb-4 text-4xl">making some changes!!!</h1>
+      <h1 className="mb-4 text-4xl">Hello from Nextjs</h1>
 
       <ul>
         {posts.map((post) => (
