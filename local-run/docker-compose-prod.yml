@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nextjs-prod:
+    build:
+      context: ..
+      dockerfile: local-run/Dockerfile-prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    # No volumes mounted in production to use the built files in the image
+    restart: unless-stopped
